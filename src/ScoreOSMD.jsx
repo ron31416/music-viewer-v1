@@ -24,7 +24,8 @@ export default function ScoreOSMD()
 
       // load file from /public
       osmd
-        .load("/sample.musicxml")
+        .load("gymnopedie-no-1-satie.mxl")
+        //.load("sample.musicxml")
         .then(() => osmd.render())
         .catch(console.error);
 
