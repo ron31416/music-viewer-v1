@@ -37,8 +37,11 @@ export default function ScoreOSMD()
   );
 
   return (
-  <div className={styles.scoreContainer}>   {/* apply CSS module */}
-    <div ref={hostRef}></div>
+  <div className={styles.scoreContainer}> 
+    <div id="osmd"
+         className={styles.osmdRoot} 
+         ref={hostRef} 
+    />
   </div>
   );
 }

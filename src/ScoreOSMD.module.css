@@ -1,7 +1,15 @@
-.scoreContainer
-{
+.scoreContainer {
     background-color: white;
     padding: 1rem;
     border:1px solid #ccc;
     border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.osmdRoot {
+    width: 100%;
+    max-width: 100%;
+    display: block;
 }
