@@ -6,10 +6,22 @@
     width: 100%;
     box-sizing: border-box;
     margin: 0;
+
+    height: 80vh;            /* visible area; tweak as you like */
+    overflow-y: auto;        /* scroll inside the card only */
+    overscroll-behavior: contain; /* avoid page bounce on touch */
+    -webkit-overflow-scrolling: touch; /* smooth on iOS */
 }
 
 .osmdRoot {
     width: 100%;
     max-width: 100%;
     display: block;
+}
+
+/* Nice-to-have: avoid accidental text selection while tapping */
+.scoreContainer, .osmdRoot {
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation; /* better tap responsiveness */
 }
